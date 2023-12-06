@@ -177,3 +177,13 @@ section.listing a::after {
   margin-left: 5px;
 }
 ```
+
+## First Angular app lesson 4 - Creating an interface
+
+1. <https://angular.io/tutorial/first-app/first-app-lesson-04#first-angular-app-lesson-4---creating-an-interface>
+
+### Step 1 - Create a new Angular interface
+
+1. Run `ng generate interface housinglocation`
+
+### Step 2 - Add properties to the new interface
