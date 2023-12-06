@@ -113,3 +113,28 @@ button {
   }    
 }
 ```
+
+### Lesson 3: Create the application’s HousingLocation component
+
+1. run `ng generate component housingLocation --inline-template --skip-tests`
+2. Add component home.location to home component
+
+3 setps:
+
+1. add to imports `HousingLocationComponent`
+2. add component:
+
+```html
+template: `
+  <section>
+    <form>
+      <input type="text" placeholder="Filter by city">
+      <button class="primary" type="button">Search</button>
+    </form>
+  </section>
+  <!--HERE-->
+  <section class="results">
+    <app-housing-location></app-housing-location>
+  </section>
+  `,
+```
