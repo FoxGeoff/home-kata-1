@@ -2,26 +2,20 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.1.
 
-## Development server
+## Introduction
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1. This is a kata project demostrating standalone components
 
-## Code scaffolding
+### Lesson 2: Create Home component
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Ref <https://angular.io/tutorial/first-app/first-app-lesson-02#lesson-2-create-home-component>
 
-## Build
+``` text
+    selector: to describe how Angular refers to the component in templates.
+    standalone: to describe whether the component requires a NgModule.
+    imports: to describe the component's dependencies.
+    template: to describe the component's HTML markup and layout.
+    styleUrls: to list the URLs of the CSS files that the component uses in an array.
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. Run `ng generate component home --inline-template --skip-tests`
