@@ -289,4 +289,3 @@ template: `
   [housingLocation]="housingLocation">
 </app-housing-location>
 ```
-
