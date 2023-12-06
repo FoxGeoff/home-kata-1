@@ -277,3 +277,16 @@ template: `
   `,
 
 ```
+
+## Lesson 8: Use *ngFor to list objects in component
+
+1. Ref: <https://angular.io/tutorial/first-app/first-app-lesson-08#lesson-8-use-ngfor-to-list-objects-in-component>
+
+```html
+<!--home.component.ts-->
+<app-housing-location
+  *ngFor="let housingLocation of housingLocationList"
+  [housingLocation]="housingLocation">
+</app-housing-location>
+```
+
