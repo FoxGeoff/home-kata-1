@@ -26,7 +26,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 2. Replace app.component
 
 ```typescript
-template: `
   <main>
     <header class="brand-name">
       <img class="brand-logo" src="/assets/logo.svg" alt="logo" aria-hidden="true">
@@ -35,7 +34,7 @@ template: `
       <app-home></app-home>
     </section>
   </main>
-`,
+
 ```
 
 1. Ref: <https://www.svgrepo.com/vectors/home/> for icons
@@ -48,8 +47,8 @@ template: `
 
 ```json
 "styles": [
-              "src/styles.scss",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/bootstrap-icons/font/bootstrap-icons.css"
+  "src/styles.css",
+  "node_modules/bootstrap/dist/css/bootstrap.min.css",
+  "node_modules/bootstrap-icons/font/bootstrap-icons.css"
             ],
 ```
