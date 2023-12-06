@@ -50,5 +50,5 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   "src/styles.css",
   "node_modules/bootstrap/dist/css/bootstrap.min.css",
   "node_modules/bootstrap-icons/font/bootstrap-icons.css"
-            ],
+  ],
 ```
