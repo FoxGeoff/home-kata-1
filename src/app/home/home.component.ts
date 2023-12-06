@@ -16,17 +16,16 @@ import { HousingLocation } from '../housinglocation';
   </section>
 <!--home.location -->
   <section class="results">
-    <app-housing-location></app-housing-location>
-  </section>
+  <app-housing-location [housingLocation]="housingLocation"></app-housing-location>  </section>
 `,
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
 
   // Add test item
-    readonly baseUrl = 'https://angular.io/assets/images/tutorials/faa';
+  readonly baseUrl = 'https://angular.io/assets/images/tutorials/faa';
 
-    housingLocation: HousingLocation = {
+  housingLocation: HousingLocation = {
     id: 9999,
     name: 'Test Home',
     city: 'Test city',

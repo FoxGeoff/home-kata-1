@@ -247,3 +247,18 @@ export class HomeComponent {
   };
 }
 ```
+
+## Lesson 5: Add an input parameter to the component
+
+1. Ref <https://angular.io/tutorial/first-app/first-app-lesson-05#lesson-5-add-an-input-parameter-to-the-component>
+
+### Step 1 - Import the Input decorator (housing-location.component.ts)
+
+1. import `Input`
+
+```typescript
+export class HousingLocationComponent {
+  @Input() housingLocation!: HousingLocation;
+}
+
+```
