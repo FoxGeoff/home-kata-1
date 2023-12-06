@@ -187,3 +187,15 @@ section.listing a::after {
 1. Run `ng generate interface housinglocation`
 
 ### Step 2 - Add properties to the new interface
+
+```typescript
+export interface HousingLocation {
+  id: number;
+  name: string;
+  city: string;
+  state: string;
+  photo: string;
+  availableUnits: number;
+  wifi: boolean;
+  laundry: boolean;
+}
