@@ -36,3 +36,4 @@ export class HomeComponent {
     laundry: false,
   };
 }
+
