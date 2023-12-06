@@ -19,3 +19,37 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ```
 
 1. Run `ng generate component home --inline-template --skip-tests`
+
+### Step 2 - Add the new component to your app's layout
+
+1. Add to home.component - `imports: [HomeComponent]`
+2. Replace app.component
+
+```typescript
+template: `
+  <main>
+    <header class="brand-name">
+      <img class="brand-logo" src="/assets/logo.svg" alt="logo" aria-hidden="true">
+    </header>
+    <section class="content">
+      <app-home></app-home>
+    </section>
+  </main>
+`,
+```
+
+1. Ref: <https://www.svgrepo.com/vectors/home/> for icons
+
+### Task add Bootstrap
+
+1. run `npm i bootstrap-icons`
+2. add to `angular.json`
+3. run `npm i bootstrap@5.3.2`
+
+```json
+"styles": [
+              "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/bootstrap-icons/font/bootstrap-icons.css"
+            ],
+```
