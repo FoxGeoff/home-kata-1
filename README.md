@@ -23,7 +23,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ### Step 2 - Add the new component to your app's layout
 
 1. Add to home.component - `imports: [HomeComponent]`
-2. Replace app.component
+2. Replace app.component.html
 
 ```typescript
   <main>
@@ -51,4 +51,65 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   "node_modules/bootstrap/dist/css/bootstrap.min.css",
   "node_modules/bootstrap-icons/font/bootstrap-icons.css"
   ],
+```
+
+### Step 3 - Add features to HomeComponent
+
+1. <https://angular.io/tutorial/first-app/first-app-lesson-02#step-3---add-features-to-homecomponent>
+2. update template in `home.component.ts`
+
+```html
+template: `
+  <section>
+    <form>
+      <input type="text" placeholder="Filter by city">
+      <button class="primary" type="button">Search</button>
+    </form>
+  </section>
+`,
+```
+
+1. Style home.component.css
+
+```css
+.results {
+  display: grid;
+  column-gap: 14px;
+  row-gap: 14px;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
+  margin-top: 50px;
+  justify-content: space-around;
+}
+
+input[type="text"] {
+  border: solid 1px var(--primary-color);
+  padding: 10px;
+  border-radius: 8px;
+  margin-right: 4px;
+  display: inline-block;
+  width: 30%;
+}
+
+button {
+  padding: 10px;
+  border: solid 1px var(--primary-color);
+  background: var(--primary-color);
+  color: white;
+  border-radius: 8px;
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+  .results {
+      grid-template-columns: repeat(2, 1fr);
+  }
+  input[type="text"] {
+      width: 70%;
+  }   
+}
+
+@media (max-width: 499px) {
+  .results {
+      grid-template-columns: 1fr;
+  }    
+}
 ```
